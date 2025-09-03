@@ -1,0 +1,128 @@
+/* Base Page */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Base Page */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #e0f7f7; /* light turquoise */
+    color: #1f1f1f;
+}
+
+/* Fixed Top Banner */
+.top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #008080, #20b2aa); /* teal/turquoise */
+    z-index: 100;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 20px 40px; /* top padding to avoid banner overlap */
+    text-align: center;
+}
+
+/* Profile Circle */
+.profile-circle {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff8dc; /* sandy beige */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* maintain aspect ratio, no distortion */
+}
+
+/* Description */
+.description {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    flex: 1;
+    min-width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card p {
+    margin: 10px;
+    padding: 0 5px;
+}
+
+/* Buttons / Links */
+.links {
+    margin: 20px 0;
+}
+a{
+    vertical-align: top;
+
+}
+
+.button {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px 20px;
+    background-color: #20b2aa; /* turquoise */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.button:hover {
+    background-color: #008080; /* darker teal */
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #20b2aa;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.back-to-top:hover {
+    background-color: #008080;
+    transform: translateY(-2px);
+}
